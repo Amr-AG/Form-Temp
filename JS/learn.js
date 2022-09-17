@@ -6,8 +6,8 @@ let myAudio = document.querySelector("#audio");
 
 login.addEventListener("click", (e) => {
   if (
-    email.value === "" ||
-    password.value === "" ||
+    email.value === "" &&
+    password.value === "" &&
     password.value.length < 6
   ) {
     e.preventDefault();
